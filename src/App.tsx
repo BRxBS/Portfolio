@@ -5,9 +5,9 @@ import { Header } from "./components/header";
 export function App() {
 
   return (
-    <>
+    <BrowserRouter>
               <Header/>
               <Router />
-    </>
+    </BrowserRouter>
   )
 }
