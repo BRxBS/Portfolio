@@ -1,4 +1,5 @@
 import "./styles.scss"
+import myImg from '../../../public/img.svg'
 
 export function HomePage(){
 
@@ -6,7 +7,7 @@ export function HomePage(){
     return(
         <div className="HomePage-container">
             <div className="img-wrapper">
-            <img src="https://picsum.photos/200" alt="" />
+            <img src={myImg} alt="myPhoto" />
             </div>
 
 
@@ -15,7 +16,7 @@ export function HomePage(){
                 Introdução
             </h2>
             <p className="top-text"> I enjoy build websites. </p>
-             <p>Todos os dias é dia de <strong>aprender</strong>.</p> 
+             <p>Every day is a day to <strong>learn</strong>.</p> 
             </div>
     
         </div>
