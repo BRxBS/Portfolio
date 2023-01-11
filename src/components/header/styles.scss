@@ -15,5 +15,51 @@ header{
     h2{
         font-family: 'Cormorant Garamond', serif;
     }
+    ul{
+        display: none;
+    }
+    .contact-wrapper{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    header{
+        height: 4.5rem;
+    
+        img{
+            height: 4rem;
+        }
+        h2{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+        }
+        .svgList{
+            display: none;
+        }
+        ul{
+            font-family: 'Inter', sans-serif;
+            display: inline-flex;  
+            list-style-type: none;
+            li{
+                margin: 0px 2rem;
+            }
+        }
+        .contact-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Inter', sans-serif;
+          
+            p{
+            padding-left: 0.5rem;
+
+            }
+        }
+    
+    }
+}
+@media only screen and (min-width: 1000px) {
 
 }
