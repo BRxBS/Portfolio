@@ -1,6 +1,6 @@
 import "./styles.scss"
 
-export function projectsPage(){
+export function ProjectsPage(){
 
     
     return(
