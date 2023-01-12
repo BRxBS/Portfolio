@@ -1,25 +1,36 @@
-import "./styles.scss"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import { EnvelopeSimple, List, X } from "phosphor-react"
 import icon from '../../../public/icon.svg'
-import { EnvelopeSimple, List, } from "phosphor-react"
+import { SideBar } from "../sideBar"
+import "./styles.scss"
+
+
+
 
 export function Header(){
 
-    
     return(
         <header>
             <img src={icon} alt="icon" />
             <h2>Bruna Santos</h2>
-            <List size={32} color="#fffafa" className="svgList" />
+
+            <div>
+            <SideBar/>
+            </div>
 
             <ul>
-                <li> Home</li>
-                <li> About</li>
-                <li> Projects</li>
+                <li> <Link to={`/`}>Home</Link> </li>
+                <li> <Link to={`/aboutPage`}> About</Link></li>
+                <li> <Link to={`/projects`}>Projects</Link> </li>
             </ul>
 
             <div className="contact-wrapper">
             <EnvelopeSimple size={32} color="#fffafa"  className="svgEnvelope" />
+            <a href="#">
             <p>Talk to me.</p>
+            </a>
+            
             </div>
          
         </header>
