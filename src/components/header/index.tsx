@@ -22,7 +22,7 @@ export function Header(){
             <ul>
                 <li> <Link to={`/`}>Home</Link> </li>
                 <li> <Link to={`/aboutPage`}> About</Link></li>
-                <li> <Link to={`/projects`}>Projects</Link> </li>
+                <li> <Link to={`/projectsPage`}>Projects</Link> </li>
             </ul>
 
             <div className="contact-wrapper">
