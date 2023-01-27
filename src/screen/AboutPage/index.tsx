@@ -15,8 +15,8 @@ export function AboutPage(){
             laboriosam, ut, consequatur amet natus? Eum beatae debitis tempore 
             ex quis? Natus?
             </p> 
-            <iframe src="https://github.com/BRxBS" frameBorder="0"></iframe>
-    
+
+            
         </div>
     )
 }

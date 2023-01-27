@@ -1,0 +1,32 @@
+.projectsPage-container{
+    padding: 1rem;
+
+    .ted-ed{
+        margin: auto;
+        background-color: white;
+        width: 18rem;
+        height: auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        
+        .ted-ed-h2{
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+        }
+
+        iframe{
+            margin: auto;
+            width: 18rem;
+            height: 20rem;
+            border-radius: 5px;
+   
+              
+
+        }
+        p{
+            font-family: 'Inter', sans-serif; 
+        }
+    }
+}
+
+  
