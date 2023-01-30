@@ -1,29 +1,47 @@
+import {gql, useQuery} from '@apollo/client'
 import { useState } from "react"
 import "./styles.scss"
 
+const GET_INFO_QUERY = gql`
+query {
+    portfolio {
+      id
+      iframeUrl
+      title
+      discription
+    }
+  }
+
+`
+interface GetInfoQueryResponse 
+{portfolio: {
+  id:string
+  iframeUrl: string
+  title: string
+  discription: string
+}[]}
+
 export function ProjectsPage(){
-const [readMore, setMore] = useState(false)
+    const { data } = useQuery<GetInfoQueryResponse>(GET_INFO_QUERY);
+// const [readMore, setMore] = useState(false)
     
     return(
         <div className="projectsPage-container">
-            <div className="ted-ed">
             
-            <h2 className="ted-ed-h2">Plataforma de Lições</h2>
-            <iframe src="https://ted-ed-plataform-ejiiqxx8b-brxbs.vercel.app/" 
-                    frameBorder="0"></iframe>
+                {data?.portfolio.map((info) => {
+                    return(
+                        <div className="ted-ed" key=
+                        {info.id}>
+                        <h2 className="ted-ed-h2">{info.title}</h2>
+                        <iframe src={info.iframeUrl}
+                         frameBorder="0"></iframe>
 
-            <p>Uma plataforma em que você faz a sua inscrição somente com nome completo e 
-                e-mail e então você tera acesso a uma serie de video aulas
-                que explicam sobre virus e pandemias entre outras coisas sobre saúde. </p>
-            </div>
+                        <p>{info.discription}</p>
+                        </div>
+                    )
+                })}
+            
 
-            {/* <div className="meeting">
-            <iframe src="https://meeting-app-bmmr-1mjaqta2u-brxbs.vercel.app/" frameBorder="0"> oi</iframe>
-            </div>
-
-            <div className="mem-game">
-            <iframe src="https://brxbs.github.io/Memory-Game/" frameBorder="0"> oi</iframe>
-            </div> */}
 
 
         </div>
