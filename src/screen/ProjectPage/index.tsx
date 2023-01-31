@@ -26,6 +26,7 @@ export function ProjectsPage(){
     const { data } = useQuery<GetInfoQueryResponse>(GET_INFO_QUERY);
     const [expandedMap, setExpandedMap] = useState<{ [key: string]: boolean }>({});
    
+    
     const toggleExpand = (newInfo : any) => {
       setExpandedMap(prevExpandedMap => ({
         ...prevExpandedMap,
