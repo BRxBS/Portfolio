@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { EnvelopeSimple, List, X } from "phosphor-react"
-import icon from '../../../public/icon.svg'
+import icon from '/icon.svg'
 import { SideBar } from "../sideBar"
 import "./styles.scss"
 
@@ -21,14 +21,15 @@ export function Header(){
 
             <ul>
                 <li> <Link to={`/`}>Home</Link> </li>
-                <li> <Link to={`/aboutPage`}> About</Link></li>
-                <li> <Link to={`/projectsPage`}>Projects</Link> </li>
+                <li> <Link to={`/aboutPage`}> Sobre</Link></li>
+                <li> <Link to={`/projectsPage`}>Projetos</Link> </li>
             </ul>
 
             <div className="contact-wrapper">
             <EnvelopeSimple size={32} color="#fffafa"  className="svgEnvelope" />
-            <a href="#">
-            <p>Talk to me.</p>
+            <a target='blanck'
+             href="mailto:brunahta2025@hotmail.com?subject=Hello">
+            <p>Fale Comigo.</p>
             </a>
             
             </div>
