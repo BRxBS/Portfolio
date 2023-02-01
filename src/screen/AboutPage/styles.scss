@@ -1,14 +1,54 @@
 .about-container{
-    background-color: #100F0F;
-    margin: auto;
-    width: 18rem;
-    height: 100%;
-    padding: 1rem;
-    font-family: 'Inter', sans-serif;
-    margin-top: -1rem;
+
+    .about-wrapper{
+
+        background-color: #100F0F;
+        margin: auto;
+        width: 18rem;
+        height: 100%;
+        padding: 1rem;
+        font-family: 'Inter', sans-serif;
+        margin-top: -1rem;
+
+        .about-title{
+            color: white;
+            font-family: 'Roboto Mono', monospace
+           }
+           .about-text{
+            color: white;
+            text-align: justify;
+            font-family: 'Inter', sans-serif;
+           }
+    }
 
 
-    p{
-        color: white;
+
+}
+
+
+@media only screen and (min-width: 800px) {
+    .about-container{
+   .about-wrapper{
+
+        background-color: #100F0F;
+        margin: auto;
+        width: 70%;
+        height: 100%;
+        padding: 1rem;
+        font-family: 'Inter', sans-serif;
+        margin-top: -1rem;
+        
+        .about-title{
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            margin-left: 1rem;
+           }
+           .about-text{
+            padding: 1rem;
+            color: white;
+            text-align: justify;
+            font-family: 'Inter', sans-serif;
+           }
+    }
     }
 }
