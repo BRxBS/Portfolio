@@ -1,5 +1,5 @@
 import "./styles.scss"
-import myImg from '../../../public/img.svg'
+import myImg from '/img.svg'
 
 export function HomePage(){
 
@@ -16,7 +16,7 @@ export function HomePage(){
                 Introdução
             </h2>
             <p className="top-text"> I enjoy build websites. </p>
-             <p>Every day is a day to <strong>learn</strong>.</p> 
+             <p>Todo dia é dia de <strong>Aprender</strong>.</p> 
             </div>
     
         </div>
