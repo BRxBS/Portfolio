@@ -15,7 +15,7 @@ export function HomePage(){
             <h2>
                 Introdução
             </h2>
-            <p className="top-text"> I enjoy build websites. </p>
+            <p className="top-text"> I enjoy building websites.</p>
              <p>Todo dia é dia de <strong>Aprender</strong>.</p> 
             </div>
     
