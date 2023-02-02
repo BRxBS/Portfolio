@@ -5,15 +5,11 @@
     
 
     .container-aside{
-    
-      
         display: flex;
         align-items: center;
         justify-content: space-between;
         user-select: none;
-        
-        
-        
+             
         aside{
             background-color: #110f0f;
             position: absolute;
@@ -36,10 +32,18 @@
                     font-size: large;
                     border-bottom: 1px solid white;
                     a{
+                        display: block;
+                        width: 100%;
                         color: white;
                         text-decoration: none;
                     }
                 }
+            }
+
+            .contact-wrapper{
+                display: flex;
+                align-items: center ;
+                justify-content: center;
             }
         }
     }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
-import {  List, X } from "phosphor-react"
+import {  EnvelopeSimple, List, X } from "phosphor-react"
 import "./styles.scss"
 
 
@@ -37,9 +37,18 @@ export function SideBar(){
                 <aside>
                 <ul>
                     <li> <Link to={`/`}>Home</Link> </li>
-                    <li> <Link to={`/aboutPage`}> About</Link></li>
-                    <li> <Link to={`/projects`}>Projects</Link> </li>
+                    <li> <Link to={`/aboutPage`}> Sobre</Link></li>
+                    <li> <Link to={`/projectsPage`}>Projetos</Link> </li>
                 </ul>
+                <div className="contact-wrapper">
+            <EnvelopeSimple size={32} color="#fffafa"  className="svgEnvelope" />
+            <a target='blanck'
+             href="mailto:brunahta2025@hotmail.com?subject=Hello">
+            <p>Fale Comigo.</p>
+            </a>
+            
+            </div>
+
                 </aside> )}
 
         </div>
