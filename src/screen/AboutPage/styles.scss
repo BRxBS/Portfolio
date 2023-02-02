@@ -3,22 +3,59 @@
     .about-wrapper{
 
         background-color: #100F0F;
+        color: white;
         margin: auto;
-        width: 18rem;
+        width: 70%;
         height: 100%;
         padding: 1rem;
         font-family: 'Inter', sans-serif;
         margin-top: -1rem;
 
         .about-title{
-            color: white;
+            
             font-family: 'Roboto Mono', monospace
            }
-           .about-text{
-            color: white;
+        .about-me-wraper{
+            padding: 1rem;
             text-align: justify;
             font-family: 'Inter', sans-serif;
+
+            .personality{
+                display: block;      
+                div{
+                    background-color: #ffffff;  
+                    text-align: center;
+                    color: black;
+                    border-top-left-radius: 0.5rem;
+                    border-bottom-right-radius: 0.5rem;
+                    padding: 0.5rem 0px;
+               
+                    h4{
+                        text-shadow: 2px 2px 5px #8a8080;
+                        font-family: 'Roboto Mono', monospace;
+                        margin: 0.5rem ; 
+
+                    }
+                    p{
+                        margin: 0.5rem;
+                        font-weight: 600;
+                    }
+                }
+           
+            }
            }
+        .hard-skills-wrapper{
+            padding: 1rem;
+            text-align: justify;
+            font-family: 'Inter', sans-serif;
+        }
+        .soft-skills-wrapper{
+            padding: 1rem;
+            text-align: justify;
+            font-family: 'Inter', sans-serif;
+        }
+
+           
     }
 
 
@@ -26,29 +63,27 @@
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .about-container{
-   .about-wrapper{
+      .about-wrapper{
+        .about-me-wraper{
+            .personality{
+                display: flex;
+               justify-content: space-between; 
 
-        background-color: #100F0F;
-        margin: auto;
-        width: 70%;
-        height: 100%;
-        padding: 1rem;
-        font-family: 'Inter', sans-serif;
-        margin-top: -1rem;
+                div{
+                    background-color: #fb976c;
+                    padding: 0px 1rem;
+                    h4{
+                        text-shadow: 2px 2px 5px #e36464;
+                    }
+                }
+           
+            }
+           }
+
+
         
-        .about-title{
-            color: white;
-            font-family: 'Roboto Mono', monospace;
-            margin-left: 1rem;
-           }
-           .about-text{
-            padding: 1rem;
-            color: white;
-            text-align: justify;
-            font-family: 'Inter', sans-serif;
-           }
     }
     }
 }

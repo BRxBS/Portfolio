@@ -1,29 +1,6 @@
 import {gql, useQuery} from '@apollo/client'
 import "./styles.scss"
 
-const GET_INFO_QUERY = gql`
-query info {
-    aboutMes {
-      id
-      title
-      info {
-        text
-      }
-      hardSkills
-    }
-  }
-
-`
-interface GetInfoQueryResponse 
-{aboutMes: {
-  id: string
-  title: string
-  info:{
-    text:string
-  }
-  hardSkills:string
-}[]}
-
 export function AboutPage(){
    
     
@@ -32,8 +9,20 @@ export function AboutPage(){
 
                     
                       <div className='about-wrapper' >
-                        <div className="about-content" >
-                        <h2 className="about-title">Sobre mim:</h2>
+                        
+
+                          <div className='about-me-wraper' >
+                          <div className='personality' >
+
+                          <h2 className="about-title">Sobre mim:</h2>
+                                  <div>
+                                  <h4>Tipo de personalidade</h4>
+                                              <p>Comandante</p>
+                                              <p>ENTJ</p>
+                                  </div>
+                              
+                          </div>
+                            
                           <div className='about-text' >
                             <p>2020 estudando para o Enem, mas por conta da pandemia de covid-19 fiz o 
                           Enem em 2021 entrei na universidade para estudar Línguas estrangeiras 
@@ -62,10 +51,12 @@ export function AboutPage(){
                                consertá-los.
                             </p>
                                </div>
+                            </div>
                           
-                        <h2 className="about-title">Hard Skills:</h2>
-                          <div className='about-text' >
-                            <p>Tenho uma rotina diária de estudo e prática e desenvolvimento de projetos </p>
+                       
+                          <div className='hard-skills-wrapper' >
+                          <h2 className="about-title">Hard Skills:</h2>
+                            <p>Tenho uma rotina diária de estudo e prática e desenvolvimento de projetos. </p>
                             
                             <br />
                             Ferramentas que domino: 
@@ -92,8 +83,22 @@ export function AboutPage(){
                           </ul>
                           </div>
 
-                        </div>
-                        </div>
+                          <div className='soft-skills-wrapper' >
+                          <h2 className="about-title">Soft Skills:</h2>
+                            <p>É difícil falar das soft skills e não parecer forçado, mas posso falar das minhas experiências de vida e como a minha personalidade me ajudou e as habilidades que adquirir no caminho.</p>
+                            
+                            <p>No ensino fundamental fui líder da turma por 2 anos seguidos e no ensino médio todos os 3 anos. Estas experiencias me ensinaram sobre organização e comunicação e colaboração. Ia a reuniões e palestras dentro e fora da escola e como líder também apresentava um seminário do conteúdo que aprendi.  </p>
+                            
+                            <p>Como professora procurava me comunicar de forma mais eloquente possível sem ser autoritária, trabalhando com tantas crianças me deparei com uma variedade de personalidades, então tive que trabalhar a minha inteligência emocional para melhor lidar com todos, respeitando eles e suas individualidades e me fazendo ser respeitada por todos.</p>
+                            
+                            <p>E, em geral, no meu dia a dia sou uma pessoa muito colaborativa, acredito que todos devemos fazer a parte que nos cabe, e tento sempre fazer a minha da melhor forma que posso fazer.</p>
+                          </div>
+
+
+
+                        
+                        
+                      </div>
                     
           
 
