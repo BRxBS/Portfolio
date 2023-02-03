@@ -1,8 +1,27 @@
 import {gql, useQuery} from '@apollo/client'
 import "./styles.scss"
 
-export function AboutPage(){
-   
+
+const GET_INFO_QUERY = gql`
+query info {
+  commits {
+    id
+    commitdate
+    url
+  
+  }
+}
+`
+interface GetInfoQueryResponse 
+{commits: {
+  id: string
+  commitdate:string
+  url: string
+
+}[]} 
+
+export function AboutPage(){ 
+  const { data } = useQuery<GetInfoQueryResponse>(GET_INFO_QUERY);
     
     return(
         <div className="about-container">
@@ -50,6 +69,9 @@ export function AboutPage(){
                                algum momento eu terei domínio suficiente para entender os meus erros e 
                                consertá-los.
                             </p>
+                            <p>
+                            Atualmente curso Análise e Desenvolvimento de Sistemas na faculdade Estacio.
+                            </p>
                                </div>
                             </div>
                           
@@ -57,7 +79,25 @@ export function AboutPage(){
                           <div className='hard-skills-wrapper' >
                           <h2 className="about-title">Hard Skills:</h2>
                             <p>Tenho uma rotina diária de estudo e prática e desenvolvimento de projetos. </p>
-                            
+                            {data?.commits.map((e) => {
+                              const date = new Date(e.commitdate);
+                              const formattedDate = date.toLocaleDateString("pt-BR", {
+                                year: "numeric",
+                                month: "2-digit",
+                                day: "2-digit"
+                              });
+                              return(
+                                
+                                <div className='commits-container' key={e.id}>
+                                <img src={e.url} alt="commits" />
+                                <div>
+                                <a target='blanck' href="https://github.com/BRxBS">Meu perfil no Github</a>
+                                <p>Imagem de {formattedDate}</p>
+                                </div>
+
+                                </div>
+                              )
+                            })}
                             <br />
                             Ferramentas que domino: 
                           <ul>
