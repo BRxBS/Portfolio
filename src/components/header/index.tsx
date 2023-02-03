@@ -12,7 +12,8 @@ export function Header(){
 
     return(
         <header>
-            <img src={icon} alt="icon" />
+            <Link to={`/`}><img src={icon} alt="icon" /></Link>
+            
             <h2>Bruna Santos</h2>
 
             <div>
