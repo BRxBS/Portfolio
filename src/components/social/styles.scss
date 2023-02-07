@@ -1,0 +1,17 @@
+.main-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    div{
+        background-color: #100F0F;
+        color: white;
+        margin: auto;
+        width: 80%;
+        min-height: 40rem;
+        height: auto;
+        padding: 1rem;
+        font-family: 'Inter', sans-serif;
+    }
+}
