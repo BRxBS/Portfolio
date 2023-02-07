@@ -119,6 +119,7 @@ export function AboutPage(){
                           <ul>
                             <li>Node.js </li>
                             <li>Redux </li>
+                            <li>Php </li>
                             <li>Git </li>
                           </ul>
                           </div>

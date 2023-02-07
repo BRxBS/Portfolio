@@ -1,6 +1,7 @@
 .HomePage-container{
   display: block;
-  padding: 3rem;
+  padding: 2rem;
+  height: 100%;
 
   .img-wrapper{
 
@@ -16,7 +17,7 @@
 
    .text{
     width: 100%;
-   font-size: large;
+    font-size: medium;
     padding: 0.5rem;
     h2{ 
         
@@ -44,15 +45,16 @@
 @media only screen and (min-width: 500px) {
 
     .HomePage-container{
-        padding: 3rem 10rem;    
+        padding: 3rem 6em;    
       }
 
 }
 @media only screen and (min-width: 600px) {
 
     .HomePage-container{
-        padding: 3rem 13rem;    
-      }
+        padding: 2rem 10rem;   
+
+    }
 
 }
 
@@ -62,6 +64,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
+        padding-bottom: 5rem;
         width: 70%;
         margin: auto;
 
