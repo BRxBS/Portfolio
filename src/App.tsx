@@ -3,6 +3,7 @@ import { ApolloProvider } from "@apollo/client";
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "./router";
 import { Header } from "./components/header";
+import { Footer } from "./components/footer"
 
 export function App() {
 
@@ -11,6 +12,7 @@ export function App() {
     <BrowserRouter>
             <Header/>
             <Router />
+            <Footer/>
     </BrowserRouter>
     </ApolloProvider>
   )
