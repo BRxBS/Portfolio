@@ -41,6 +41,7 @@ export function ProjectsPage(){
 
     
     return(
+      <>
         <div className="projectsPage-container">
             
                 {data?.portfolios.map((info) => {
@@ -60,23 +61,18 @@ export function ProjectsPage(){
                                             target='blanck'  
                                             className='a-iframeUrl'> Ir para Página.</a> 
                                         :  ''}
-                         
-                        
 
                         <p className={`info-discription desc-text ${expandedMap[newInfo.id]  ? "expanded" : ""}`}>{info.description}</p>
                         <p className="read-more-btn"  onClick={() => toggleExpand(newInfo)}>{expandedMap[newInfo.id]  ? 'Read Less' : 'Read More'}</p>
                         
-
                         <a href={info.repoUrl} target='blanck' className='repoUrl'>Ir ao Repositorio.</a>
                         
                         </div>
                         </div>
                     )
                 })}
-            
-
-
-
         </div>
+    
+</>
     )
 }

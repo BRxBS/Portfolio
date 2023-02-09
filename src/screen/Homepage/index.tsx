@@ -1,10 +1,12 @@
-import "./styles.scss"
 import myImg from '/img.svg'
+import "./styles.scss"
+
 
 export function HomePage(){
 
     
     return(
+        <>
         <div className="HomePage-container">
             <div className="img-wrapper">
             <img src={myImg} alt="myPhoto" />
@@ -18,7 +20,7 @@ export function HomePage(){
             <p className="top-text"> I enjoy building websites.</p>
              <p>Todo dia é dia de <strong>Aprender</strong>.</p> 
             </div>
-    
         </div>
+        </>
     )
 }

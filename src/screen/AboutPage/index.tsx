@@ -24,12 +24,12 @@ export function AboutPage(){
   const { data } = useQuery<GetInfoQueryResponse>(GET_INFO_QUERY);
     
     return(
+<>
         <div className="about-container">
-
+    
                     
                       <div className='about-wrapper' >
                         
-
                           <div className='about-me-wraper' >
                           <div className='personality' >
 
@@ -133,17 +133,12 @@ export function AboutPage(){
                             <p>Como professora procurava me comunicar de forma mais eloquente possível sem ser autoritária, trabalhando com tantas crianças me deparei com uma variedade de personalidades, então tive que trabalhar a minha inteligência emocional para melhor lidar com todos, respeitando eles e suas individualidades e me fazendo ser respeitada por todos.</p>
                             
                             <p>E, em geral, no meu dia a dia sou uma pessoa muito colaborativa, acredito que todos devemos fazer a parte que nos cabe, e tento sempre fazer a minha da melhor forma que posso fazer.</p>
-                          </div>
-
-
-
+                          </div> 
                         
-                        
-                      </div>
-                    
-          
-
-            
+                      </div>                  
+        
         </div>
+
+  </>
     )
 }
