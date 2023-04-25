@@ -27,7 +27,6 @@ export function AboutPage(){
 <>
         <div className="about-container">
     
-                    
                       <div className='about-wrapper' >
                         
                           <div className='about-me-wraper' >
