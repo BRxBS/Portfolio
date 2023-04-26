@@ -78,8 +78,7 @@
     .projectsPage-container{
 
         display: grid;
-        align-items: center;
-        margin: auto;
+        align-items: center; 
         grid-gap: 20px 12px;
         grid-template-columns: repeat(2, calc(50% - 8px));
         grid-template-rows: auto;
@@ -100,7 +99,6 @@
 
         display: grid;
         align-items: center;
-        margin: auto;
         grid-gap: 1rem 3rem;
         grid-template-columns: repeat(3, calc(30% - 5px));
         grid-template-rows: auto;
