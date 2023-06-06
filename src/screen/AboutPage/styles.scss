@@ -1,109 +1,231 @@
-.about-container{
-    .about-wrapper{
-
-        background-color: #100F0F;
+.about-container {
+    .about-wrapper {
+        background-color: #100f0f;
         color: white;
         margin: auto;
         width: 80%;
         height: auto;
         padding: 1rem;
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         margin-bottom: 5rem;
-        
-        .about-title{
-            
-            font-family: 'Roboto Mono', monospace
-           }
-        .about-me-wraper{
+
+        .about-title {
+            font-family: "Roboto Mono", monospace;
+        }
+        .about-me-wraper {
             padding: 1rem;
             text-align: justify;
-            font-family: 'Inter', sans-serif;
+            font-family: "Inter", sans-serif;
 
-            .personality{
-                display: block;      
-                div{
-                    background-color: #ffffff;  
+            .personality {
+                display: block;
+                div {
+                    background-color: #ffffff;
                     text-align: center;
                     color: black;
                     border-top-left-radius: 0.5rem;
                     border-bottom-right-radius: 0.5rem;
                     padding: 0.5rem 0px;
-               
-                    h4{
-                        text-shadow: 2px 2px 5px #8a8080;
-                        font-family: 'Roboto Mono', monospace;
-                        margin: 0.5rem ; 
 
+                    h4 {
+                        font-size: larger;
+                        font-family: "Roboto Mono", monospace;
+                        margin: 0.5rem;
                     }
-                    p{
+                    p {
                         margin: 0.5rem;
                         font-weight: 600;
                     }
                 }
-           
             }
-           }
-        .hard-skills-wrapper{
+        }
+        .academy-history-wrapper {
             padding: 1rem;
             text-align: justify;
-            font-family: 'Inter', sans-serif;
+            font-family: "Inter", sans-serif;
+            .dialog {
+                border-radius: 5px;
+                padding: 1.5rem;
+                img {
+                    height: 15rem;
+                }
+                button {
+                    padding: 0px;
+                    font-size: larger;
+                    font-weight: 600;
+                    position: relative;
+                    bottom: 14.5rem;
+                    left: 0.5rem;
+                    background: none;
+                    border: none;
+                    box-shadow: none;
+                    cursor: pointer;
+                }
+            }
+            .title {
+                font-size: 1.2rem;
+            }
+            .achievements-wrapper {
+                display: block;
+                font-size: small;
+                text-transform: capitalize;
 
-            .commits-container{
+                .achievements {
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                    width: 90%;
+                    border: 1px groove #424242;
+                    border-radius: 10px;
+
+                    .type {
+                        margin: 0px;
+                        text-align: center;
+                    }
+                    .grad {
+                        em {
+                            font-weight: 600;
+                            font-style: normal;
+                        }
+                    }
+                    .div-button-open-dialog {
+                        display: flex;
+                        justify-content: right;
+
+                        .button-open-dialog {
+                            font-size: small;
+                            background: none;
+                            border: none;
+                            box-shadow: none;
+                            color: aliceblue;
+                            cursor: pointer;
+                        }
+                        .button-open-dialog:hover {
+                            color: rgba(240, 248, 255, 0.772);
+                        }
+                    }
+                }
+            }
+        }
+        .hard-skills-wrapper {
+            padding: 1rem;
+            text-align: justify;
+            font-family: "Inter", sans-serif;
+
+            .commits-container {
                 display: block;
 
-                img{
+                img {
                     display: flex;
                     margin: auto;
                     width: 95%;
                     border-radius: 5px;
                 }
-                div{
+                div {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    
-                    a{
+
+                    a {
                         color: white;
                         text-decoration: none;
-                        &:hover{
+                        &:hover {
                             text-decoration: underline;
                         }
                     }
                 }
             }
         }
-        .soft-skills-wrapper{
+        .soft-skills-wrapper {
             padding: 1rem;
             text-align: justify;
-            font-family: 'Inter', sans-serif;
+            font-family: "Inter", sans-serif;
         }
-
-           
     }
-
-
-
 }
 
-
 @media only screen and (min-width: 600px) {
-    .about-container{
-      .about-wrapper{
-        .about-me-wraper{
-            .personality{
-                display: flex;
-               justify-content: space-between; 
-
-                div{
-                    background-color: #fb976c;
-                    padding: 0px 1rem;
-                    h4{
-                        text-shadow: 2px 2px 5px #e36464;
+    .about-container {
+        .about-wrapper {
+            .academy-history-wrapper {
+                padding: 1rem;
+                text-align: justify;
+                font-family: "Inter", sans-serif;
+                .title {
+                    font-size: 1.5rem;
+                }
+                .dialog {
+                    border-radius: 5px;
+                    padding: 1.5rem;
+                    img {
+                        height: 25rem;
+                    }
+                    button {
+                        padding: 0px;
+                        font-size: larger;
+                        font-weight: 600;
+                        position: relative;
+                        bottom: 24.5rem;
+                        left: 0.5rem;
+                        background: none;
+                        border: none;
+                        box-shadow: none;
+                        cursor: pointer;
                     }
                 }
-           
+                .achievements-wrapper {
+                    display: flex;
+                    font-size: medium;
+                    justify-content: space-around;
+                    text-transform: capitalize;
+
+                    .achievements {
+                        padding: 1rem;
+                        width: 25rem;
+                        border: 1px groove #424242;
+                        border-radius: 10px;
+                        .type {
+                            margin: 0px;
+                            text-align: center;
+                        }
+                        .grad {
+                            em {
+                                font-weight: 600;
+                                font-style: normal;
+                            }
+                        }
+                        .div-button-open-dialog {
+                            display: flex;
+                            justify-content: right;
+
+                            .button-open-dialog {
+                                font-size: small;
+                                background: none;
+                                border: none;
+                                box-shadow: none;
+                                color: aliceblue;
+                                cursor: pointer;
+                            }
+                            .button-open-dialog:hover {
+                                color: rgba(240, 248, 255, 0.772);
+                            }
+                        }
+                    }
+                }
             }
-           }        
-     }
+            .about-me-wraper {
+                .personality {
+                    display: flex;
+                    justify-content: space-between;
+
+                    div {
+                        background-color: #fb976c;
+                        padding: 0px 1rem;
+                        h4 {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
