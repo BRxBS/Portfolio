@@ -1,6 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 import "./styles.scss";
-import img from "../../../public/certificado.png";
+import img from "/certificado.png";
 import { useState } from "react";
 import { Eye } from "phosphor-react";
 
